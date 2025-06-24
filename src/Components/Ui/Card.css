@@ -1,0 +1,134 @@
+/* ===================== CARD CONTAINER ===================== */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+  padding: 40px;
+  background: linear-gradient(to right, #f0f0f0, #fafafa);
+  min-height: 100vh;
+}
+
+/* ===================== FLIP CARD STRUCTURE ===================== */
+.flip-card {
+  width: 240px;
+  height: 360px;
+  perspective: 1000px;
+  transition: transform 0.3s ease;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease-in-out;
+  border-radius: 16px;
+}
+
+.flip-card:hover {
+  transform: scale(1.05);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* ===================== FRONT FACE (MOVIE POSTER) ===================== */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  backface-visibility: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.flip-card-front {
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flip-card-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+/* ===================== BACK FACE (DETAILS + BUTTON) ===================== */
+.flip-card-back {
+  transform: rotateY(180deg);
+  /*background-color: #ffffff;*/
+  background: linear-gradient(to bottom right, pink, purple);
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px 16px;
+  text-align: center;
+  gap: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+}
+
+.flip-card-back h3 {
+  /*font-size: 1.2rem;*/
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 6px 0;
+}
+
+.flip-card-back .desc {
+  font-size: 0.9rem;
+  color: #555;
+  font-style: italic;
+  margin: 6px 0;
+  line-height: 1.4;
+  max-width: 180px;
+}
+
+.flip-card-back p {
+  font-size: 0.85rem;
+  color: #444;
+  margin: 2px 0;
+}
+
+/* ===================== WATCH NOW BUTTON ===================== */
+.watch-btn {
+  margin-top: auto;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.watch-btn:hover {
+  background-color: #0056b3;
+}
+
+/* ===================== RESPONSIVE ===================== */
+@media (max-width: 768px) {
+  .flip-card {
+    width: 200px;
+    height: 300px;
+  }
+
+  .flip-card-back {
+    padding: 16px;
+  }
+
+  .flip-card-back .desc {
+    font-size: 0.85rem;
+    max-width: 160px;
+  }
+}

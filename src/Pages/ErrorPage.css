@@ -1,0 +1,60 @@
+/* Fade-in and slide for the container */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounceHover {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.error-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  text-align: center;
+  animation: fadeInUp 1s ease;
+}
+
+.error-image {
+  width: 350px;
+  max-width: 90%;
+  margin-bottom: 20px;
+  animation: fadeInUp 1s ease 0.3s;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #ff4c4c;
+}
+
+p {
+  font-size: 1.2rem;
+  margin: 10px 0 20px;
+}
+
+.go-back-button {
+  padding: 10px 20px;
+  background-color: #0066cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.go-back-button:hover {
+  background-color: #004080;
+  animation: bounceHover 0.5s ease;
+}

@@ -1,0 +1,135 @@
+/* General Container */
+.home-container {
+  padding: 2rem;
+  background: linear-gradient(to bottom right, #111, #1f1f1f);
+  color: #fff;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Hero Layout */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Left text and highlights */
+.home-left {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* Hero Text */
+.home-text h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.home-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+/* Buttons */
+.home-buttons button {
+  margin-right: 1rem;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 30px;
+  background: #ff4b2b;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.home-buttons button:hover {
+  background: #ff416c;
+  transform: scale(1.05);
+}
+
+/* Highlights List */
+.highlights {
+  margin-top: 2rem;
+}
+
+.highlights h4 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.highlights ul {
+  padding-left: 1.2rem;
+  list-style: none;
+}
+
+.highlights li {
+  margin-bottom: 0.5rem;
+}
+
+/* GIF / Right Side */
+.home-gif img {
+  max-width: 350px;
+  border-radius: 12px;
+  margin-top: 2rem;
+}
+
+/* Review Slider */
+.review-slider {
+  text-align: center;
+  margin-top: 4rem;
+  padding: 2rem 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  animation: fadeIn 1s ease-in;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.review-slider h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.review-card {
+  font-size: 1.1rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.review-text {
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+.review-name {
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+
+.review-stars {
+  color: gold;
+  font-size: 1.2rem;
+}
+
+/* Optional fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,61 @@
+.subscribe-page {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.subscribe-page h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.subscribe-form input {
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.payment-options h4 {
+  margin-bottom: 10px;
+}
+
+.payment-options button {
+  padding: 10px 12px;
+  margin-right: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+.payment-options button.selected {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.subscribe-submit {
+  margin-top: 10px;
+  padding: 12px;
+  background-color: #28a745;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.subscribe-submit:hover {
+  background-color: #218838;
+}

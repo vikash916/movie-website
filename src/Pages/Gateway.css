@@ -1,0 +1,52 @@
+.gateway-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px;
+  text-align: center;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.loading {
+  font-size: 18px;
+  color: #555;
+}
+
+.qr {
+  width: 200px;
+  margin-bottom: 15px;
+}
+
+.card-box {
+  background: linear-gradient(135deg, #323232, #595959);
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  font-family: monospace;
+}
+
+.card-number {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.card-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pay-btn {
+  padding: 12px 25px;
+  background: #28a745;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.pay-btn:hover {
+  background: #218838;
+}

@@ -1,0 +1,79 @@
+.header {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo {
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color:#DC143C;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+/* .nav-link.active{
+    color:535bf2
+} */
+.nav-link:hover {
+  color: red;
+}
+.auth-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  max-width: 300px;
+}
+
+.signin-button {
+  background-color: red;
+  color: white;
+  padding: 5px 12px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  margin-bottom: 4px;
+  cursor: pointer;
+}
+
+.signin-button:hover {
+  background-color: darkred;
+}
+
+.subscription-text {
+  font-size: 20px;
+  color: #ccc;
+  gap:5px
+}
+

@@ -1,0 +1,104 @@
+/* .movie-details {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  background: #f4f4f4;
+  min-height: 100vh;
+}
+
+.movie-card {
+  display: flex;
+  gap: 30px;
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+}
+
+.movie-poster {
+  width: 300px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.movie-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.movie-info h2 {
+  margin-bottom: 10px;
+}
+
+.plot {
+  font-style: italic;
+}
+
+.watch-btn {
+  margin-top: 16px;
+  padding: 10px 20px;
+  font-size: 0.95rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.watch-btn:hover {
+  background-color: #0056b3;
+} */
+
+
+
+
+
+.movie-details {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  background-color: #f9f9f9;
+}
+
+.movie-card {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  width: 100%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.movie-poster {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.movie-info {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.watch-btn {
+  margin-top: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.watch-btn:hover {
+  background-color: #0056b3;
+}
